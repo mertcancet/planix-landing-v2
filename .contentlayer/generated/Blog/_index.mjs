@@ -4,9 +4,9 @@ import blog__artificialIntelligenceMdx from './blog__Artificial-Intelligence.mdx
 import blog__productivityHacksMdx from './blog__Productivity-Hacks.mdx.json' assert { type: 'json' }
 import blog__travelTipsMdx from './blog__Travel-Tips.mdx.json' assert { type: 'json' }
 import blog__webDevelopmentMdx from './blog__Web-Development.mdx.json' assert { type: 'json' }
-import blog__healthyLivingMdx from './blog__healthy-living.mdx.json' assert { type: 'json' }
-import blog__pricingMdx from './blog__pricing.mdx.json' assert { type: 'json' }
 import blog__beautyHealthMdx from './blog__beauty-health.mdx.json' assert { type: 'json' }
 import blog__hairdressersMdx from './blog__hairdressers.mdx.json' assert { type: 'json' }
+import blog__healthyLivingMdx from './blog__healthy-living.mdx.json' assert { type: 'json' }
+import blog__pricingMdx from './blog__pricing.mdx.json' assert { type: 'json' }
 
-export const allBlogs = [blog__artificialIntelligenceMdx, blog__productivityHacksMdx, blog__travelTipsMdx, blog__webDevelopmentMdx, blog__healthyLivingMdx, blog__pricingMdx, blog__beautyHealthMdx, blog__hairdressersMdx]
+export const allBlogs = [blog__artificialIntelligenceMdx, blog__productivityHacksMdx, blog__travelTipsMdx, blog__webDevelopmentMdx, blog__beautyHealthMdx, blog__hairdressersMdx, blog__healthyLivingMdx, blog__pricingMdx]
