@@ -1,0 +1,22 @@
+{
+  "label": "PLANİX - Güzellik ve Sağlık Merkezi Yönetim Sistemi",
+  "banner": "/assets/beauty-health.png",
+  "description": "Güzellik ve sağlık merkezleri için özel tasarlanmış randevu ve müşteri yönetim sistemi.",
+  "date": "Dec 3",
+  "timeToRead": 5,
+  "body": {
+    "raw": "\n# PLANİX: Güzellik ve Sağlık Merkezleri İçin Randevu Yönetim Sistemi\n\nPLANİX, güzellik ve sağlık merkezlerinin randevu ve müşteri yönetimini kolaylaştıran profesyonel bir sistemdir.\n\n## Sektöre Özel Özellikler\n\n- Tedavi/bakım takip sistemi\n- Müşteri kartı oluşturma\n- Ürün kullanım geçmişi\n- Alerji ve hassasiyet notları\n- Önceki işlem kayıtları\n",
+    "code": "var Component=(()=>{var d=Object.create;var r=Object.defineProperty;var h=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var z=Object.getPrototypeOf,p=Object.prototype.hasOwnProperty;var v=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),x=(i,e)=>{for(var l in e)r(i,l,{get:e[l],enumerable:!0})},s=(i,e,l,t)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of u(e))!p.call(i,a)&&a!==l&&r(i,a,{get:()=>e[a],enumerable:!(t=h(e,a))||t.enumerable});return i};var y=(i,e,l)=>(l=i!=null?d(z(i)):{},s(e||!i||!i.__esModule?r(l,\"default\",{value:i,enumerable:!0}):l,i)),b=i=>s(r({},\"__esModule\",{value:!0}),i);var c=v((_,m)=>{m.exports=_jsx_runtime});var f={};x(f,{default:()=>o,frontmatter:()=>g});var n=y(c()),g={label:\"PLAN\\u0130X - G\\xFCzellik ve Sa\\u011Fl\\u0131k Merkezi Y\\xF6netim Sistemi\",banner:\"/assets/beauty-health.png\",description:\"G\\xFCzellik ve sa\\u011Fl\\u0131k merkezleri i\\xE7in \\xF6zel tasarlanm\\u0131\\u015F randevu ve m\\xFC\\u015Fteri y\\xF6netim sistemi.\",date:\"Dec 3\",timeToRead:5};function k(i){let e={a:\"a\",h1:\"h1\",h2:\"h2\",li:\"li\",p:\"p\",span:\"span\",ul:\"ul\",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(e.h1,{id:\"plani\\u0307x-g\\xFCzellik-ve-sa\\u011Fl\\u0131k-merkezleri-i\\u0307\\xE7in-randevu-y\\xF6netim-sistemi\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#plani\\u0307x-g\\xFCzellik-ve-sa\\u011Fl\\u0131k-merkezleri-i\\u0307\\xE7in-randevu-y\\xF6netim-sistemi\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"PLAN\\u0130X: G\\xFCzellik ve Sa\\u011Fl\\u0131k Merkezleri \\u0130\\xE7in Randevu Y\\xF6netim Sistemi\"]}),`\n`,(0,n.jsx)(e.p,{children:\"PLAN\\u0130X, g\\xFCzellik ve sa\\u011Fl\\u0131k merkezlerinin randevu ve m\\xFC\\u015Fteri y\\xF6netimini kolayla\\u015Ft\\u0131ran profesyonel bir sistemdir.\"}),`\n`,(0,n.jsxs)(e.h2,{id:\"sekt\\xF6re-\\xF6zel-\\xF6zellikler\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#sekt\\xF6re-\\xF6zel-\\xF6zellikler\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"Sekt\\xF6re \\xD6zel \\xD6zellikler\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Tedavi/bak\\u0131m takip sistemi\"}),`\n`,(0,n.jsx)(e.li,{children:\"M\\xFC\\u015Fteri kart\\u0131 olu\\u015Fturma\"}),`\n`,(0,n.jsx)(e.li,{children:\"\\xDCr\\xFCn kullan\\u0131m ge\\xE7mi\\u015Fi\"}),`\n`,(0,n.jsx)(e.li,{children:\"Alerji ve hassasiyet notlar\\u0131\"}),`\n`,(0,n.jsx)(e.li,{children:\"\\xD6nceki i\\u015Flem kay\\u0131tlar\\u0131\"}),`\n`]})]})}function o(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(k,{...i})}):k(i)}return b(f);})();\n;return Component;"
+  },
+  "_id": "blog/beauty-health.mdx",
+  "_raw": {
+    "sourceFilePath": "blog/beauty-health.mdx",
+    "sourceFileName": "beauty-health.mdx",
+    "sourceFileDir": "blog",
+    "contentType": "mdx",
+    "flattenedPath": "blog/beauty-health"
+  },
+  "type": "Blog",
+  "slug": "/blog/beauty-health",
+  "slugAsParams": "beauty-health"
+}
