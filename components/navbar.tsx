@@ -32,7 +32,9 @@ const Navbar = (): React.ReactNode => {
     >
       <Link href="/" className="flex gap-3 mb-4 md:mb-0 w-1/3 cursor-pointer">
         <Logo />
-        <label className="text-3xl font-semibold tracking-tight">Planix</label>
+        <label className="text-3xl flex items-center justify-start  text-emerald-500 font-bold tracking-tight [text-shadow:0px_0px_3px_rgba(16,185,129,0.62),0px_0px_17px_rgba(17,194,135,0.85)]">
+          Planix
+        </label>
       </Link>
       <div className="md:flex hidden justify-between w-2/3 ">
         <div className="flex justify-center w-1/2 gap-2 md:gap-9 text-lg mb-4 md:mb-0">

@@ -69,7 +69,9 @@ const Footer = () => {
         <div className="w-[740px] md:p-9 p-2">
           <div className="flex gap-1">
             <Logo />
-            <label className="text-3xl font-semibold">Planix</label>
+            <label className="text-3xl flex items-center justify-start  text-emerald-500 font-bold tracking-tight [text-shadow:0px_0px_3px_rgba(16,185,129,0.62),0px_0px_17px_rgba(17,194,135,0.85)]">
+              Planix
+            </label>
           </div>
           <p className="md:text-3xl lg:text-5xl font-bold text-lg  md:leading-[54px] md:w-[700px] w-[300px] md:mt-9 mt-0">
             Randevu Yönetimi, SMS Bildirimleri ve Hizmet Planlaması
