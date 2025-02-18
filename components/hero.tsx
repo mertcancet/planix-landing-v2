@@ -147,6 +147,8 @@ export const Hero = () => {
           Randevularınızı kolayca yönetin, SMS ile müşterilerinize otomatik
           hatırlatmalar gönderin. İşletmenizi büyütmeye odaklanın, randevu
           takibini bize bırakın.
+          <br />
+          Selam Yeşim ❤️
         </motion.p>
         <Link href="/sign-up">
           <motion.button
