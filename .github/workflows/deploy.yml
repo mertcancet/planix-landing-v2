@@ -30,6 +30,7 @@ jobs:
           set -e
           cd /home/${{ secrets.DO_USER }}/www.planix.com.tr
           git pull origin main
+          npm run clean
           npm install
           npm run build
           pm2 restart www.planix.com.tr || pm2 start npm --name www.planix.com.tr -- start
