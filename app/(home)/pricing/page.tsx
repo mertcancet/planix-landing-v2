@@ -11,9 +11,9 @@ const PricingPage = () => {
     <div className="w-full flex flex-col items-center">
       <div className="md:my-20">
         <Header
-          badge="pricing"
-          title="Pricing so simple, you'd buy instantly"
-          subtitle="Pick from our plans and get started in minutes, simple for everyone."
+          badge="Fiyatlandırma"
+          title="Basit ve anlaşılır fiyatlandırma"
+          subtitle="İşletmenize özel paketlerle hemen başlayın, dakikalar içinde kurulumu tamamlayın."
           className="md:my-10"
         />
         <div className="my-20">
@@ -24,13 +24,9 @@ const PricingPage = () => {
       <div className="w-full">
         <FeaturesCards />
       </div>
-      <div className="mt-72">
+      <div className="my-72">
         <Features />
         <Checks />
-      </div>
-
-      <div className="w-fit ">
-        <BookACall />
       </div>
     </div>
   );

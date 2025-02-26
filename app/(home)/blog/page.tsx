@@ -16,9 +16,9 @@ const BlogPage = () => {
     >
       <div className="md:w-[80%] w-full flex flex-col">
         <Header
-          badge="blogs"
-          title="Knowledge bank to hire better"
-          subtitle="Read from our endless resources on how to hire the perfect candidate for your ideal job."
+          badge="Blog"
+          title="PLANİX ile İşletmenizi Büyütün"
+          subtitle="Randevu yönetimi, müşteri ilişkileri ve işletme verimliliği hakkında faydalı içerikler."
           className="mt-3"
         />
         <div className="mt-10">

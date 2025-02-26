@@ -22,7 +22,7 @@ const Pricing = (): JSX.Element => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="md:h-[600px] md:h-[850px] w-full bg-[#F5F5F5] rounded-3xl p-6 lg:p-8 xl:p-16 border"
+          className=" md:h-[850px] w-full bg-[#F5F5F5] rounded-3xl p-6 lg:p-8 xl:p-16 border"
         >
           <span className="text-black">Deneme Paketi</span>
           <div className="flex items-end gap-1 my-9">

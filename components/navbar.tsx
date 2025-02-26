@@ -10,8 +10,8 @@ import { ArrowRight } from "lucide-react";
 
 const navbarItems = [
   { name: "Anasayfa", path: "/" },
-  { name: "Hakkımızda", path: "/about" },
-  { name: "İletişim", path: "/contact" },
+  { name: "Fiyatlandırma", path: "/pricing" },
+  { name: "Blog", path: "/blog" },
 ];
 
 const Navbar = (): React.ReactNode => {
