@@ -37,7 +37,7 @@ const Navbar = (): React.ReactNode => {
         </label>
       </Link>
       <div className="md:flex hidden justify-between w-2/3 ">
-        <div className="flex justify-center w-1/2 gap-2 md:gap-9 text-lg mb-4 md:mb-0">
+        <div className="flex justify-center w-1/2 gap-2 md:gap-9 text-lg mb-4 md:mb-0 items-center">
           {navbarItems.map((item) => (
             <Link
               href={item.path}
@@ -51,7 +51,8 @@ const Navbar = (): React.ReactNode => {
             </Link>
           ))}
         </div>
-        <div className="w-1/2 flex justify-end">
+        <div className="w-1/2 flex justify-end items-center gap-2">
+          <LoginButton className="text-emerald-500 font-medium hover:text-emerald-600 transition-colors duration-200 border border-emerald-600 rounded-xl px-4 py-2" />
           <GetStartedButton />
         </div>
       </div>
@@ -162,6 +163,7 @@ const Navbar = (): React.ReactNode => {
               ))}
             </ul>
             <div className="w-3/4 my-4">
+              <LoginButton className="flex mb-2 items-center justify-center w-full md:w-36 h-10 rounded-xl border border-emerald-700 bg-gradient-to-b from-emerald-500 to-brand text-base font-semibold text-white" />
               <GetStartedButton />
             </div>
           </motion.div>
@@ -173,15 +175,27 @@ const Navbar = (): React.ReactNode => {
 
 export default Navbar;
 
+const LoginButton = ({ className }: { className?: string }) => {
+  return (
+    <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }}>
+      <Link href="https://app.planix.com.tr/auth/login" className={className}>
+        Giriş Yap
+      </Link>
+    </motion.div>
+  );
+};
+
 const GetStartedButton = () => {
   return (
-    <Link
-      href="/sign-up"
-      style={{ boxShadow: "0px 4px 14.8px rgba(0, 0, 0, 0.2)" }}
-      className="flex items-center justify-center w-full md:w-36 h-10 rounded-xl border border-emerald-700 bg-gradient-to-b from-emerald-500 to-brand text-base font-semibold text-white"
-    >
-      Hemen Başla
-      <ArrowRight className="h-4 w-4 ml-2" />
-    </Link>
+    <motion.div whileTap={{ scale: 0.9 }} whileHover={{ scale: 1.05 }}>
+      <Link
+        href="https://app.planix.com.tr/auth/register"
+        style={{ boxShadow: "0px 4px 14.8px rgba(0, 0, 0, 0.2)" }}
+        className="flex items-center justify-center w-full md:w-36 h-10 rounded-xl border border-emerald-700 bg-gradient-to-b from-emerald-500 to-brand text-base font-semibold text-white"
+      >
+        Hemen Başla
+        <ArrowRight className="h-4 w-4 ml-2" />
+      </Link>
+    </motion.div>
   );
 };
