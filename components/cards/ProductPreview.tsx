@@ -52,6 +52,7 @@ const ProductPreview = (): JSX.Element => {
           src={"/assets/landing.webp"}
           alt="preview image"
           width={1200}
+          className="w-full h-full object-cover rounded-2xl"
           height={951}
         />
       </motion.div>

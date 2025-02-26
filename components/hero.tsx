@@ -147,8 +147,6 @@ export const Hero = () => {
           Randevularınızı kolayca yönetin, SMS ile müşterilerinize otomatik
           hatırlatmalar gönderin. İşletmenizi büyütmeye odaklanın, randevu
           takibini bize bırakın.
-          <br />
-          Selam Yeşim ❤️
         </motion.p>
         <Link href="/sign-up">
           <motion.button
@@ -170,7 +168,7 @@ const Banner = () => {
   return (
     <Link href="/blog/Artificial-Intelligence">
       <motion.div
-        className="md:w-[489px] w-72 md:h-10 h-9 rounded-xl bg-emerald-500/50 flex items-center justify-center md:gap-3 gap-1"
+        className="md:w-[489px] w-72 md:h-10 px-2 h-9 rounded-xl bg-emerald-500/50 flex items-center justify-center md:gap-3 gap-1"
         transition={transition}
         variants={variants}
       >

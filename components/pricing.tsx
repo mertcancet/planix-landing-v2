@@ -22,7 +22,7 @@ const Pricing = (): JSX.Element => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="h-[600px] md:h-[850px] w-full bg-[#F5F5F5] rounded-3xl p-6 lg:p-8 xl:p-16 border"
+          className="md:h-[600px] md:h-[850px] w-full bg-[#F5F5F5] rounded-3xl p-6 lg:p-8 xl:p-16 border"
         >
           <span className="text-black">Deneme Paketi</span>
           <div className="flex items-end gap-1 my-9">
@@ -64,7 +64,7 @@ const Pricing = (): JSX.Element => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="relative h-[1050px] w-full my-16 md:my-0 bg-brand rounded-3xl p-6 lg:p-8 xl:p-16 border shadow-[0px_10px_23px_0px_#0000001a,0px_41px_41px_0px_#00000017,0px_92px_55px_0px_#0000000d,0px_164px_66px_0px_#00000003,0px_257px_72px_0px_#00000000]"
+          className="relative md:h-[1050px] w-full my-16 md:my-0 bg-brand rounded-3xl p-6 lg:p-8 xl:p-16 border shadow-[0px_10px_23px_0px_#0000001a,0px_41px_41px_0px_#00000017,0px_92px_55px_0px_#0000000d,0px_164px_66px_0px_#00000003,0px_257px_72px_0px_#00000000]"
         >
           <div className="flex items-center justify-between">
             <span className="text-white text-lg font-semibold">
@@ -112,7 +112,7 @@ const Pricing = (): JSX.Element => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="h-[800px] md:h-[850px] w-full bg-[#F5F5F5] rounded-3xl p-6 lg:p-8 xl:p-16 border"
+          className="md:h-[800px] md:h-[850px] w-full bg-[#F5F5F5] rounded-3xl p-6 lg:p-8 xl:p-16 border"
         >
           <span className="text-black">Yıllık Paket</span>
           <div className="flex items-end gap-1 my-9">

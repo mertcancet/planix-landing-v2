@@ -89,7 +89,7 @@ const Card: React.FC<{
         className
       )}
     >
-      <p className="text-sm md:text-lg text-[#3C3C3C] md:leading-8 font-normal mb-8 max-h-36">
+      <p className="text-sm md:text-lg text-[#3C3C3C] md:leading-8 font-normal mb-8 md:max-h-36">
         {quote}
       </p>
       <div className="flex items-center gap-4">
