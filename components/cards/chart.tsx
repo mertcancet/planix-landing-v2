@@ -1,7 +1,7 @@
 import { InfoIcon, SandWatch } from "@/components/icons";
 import Image from "next/image";
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { ContentCard } from "./ContentCard";
 import { graphData } from "@/lib/data";
 
@@ -16,7 +16,7 @@ const ChartCard = (): JSX.Element => {
           className="absolute -right-24 top-5 z-20 w-[350px] gap-4 bg-white rounded-2xl h-16 flex items-center px-5 border shadow-[0px_4px_8px_0px_#0000001a,0px_15px_15px_0px_#00000017,0px_34px_20px_0px_#0000000d,0px_60px_24px_0px_#00000003,0px_93px_26px_0px_#00000000]"
         >
           <span>✅</span>
-          <span>Do not hire Manu, please.</span>
+          <span>Yeni randevu talebi: Ahmet Yılmaz</span>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -28,8 +28,8 @@ const ChartCard = (): JSX.Element => {
 
       <Chart />
       <ContentCard
-        title="Rank interviee, effortlessly"
-        description="State of the art bar chart depiction of interviee's performance"
+        title="Randevu İstatistikleri"
+        description="Günlük ve haftalık randevu performansınızı takip edin"
         className="mt-4"
       />
     </div>
@@ -55,7 +55,7 @@ const Chart = (): JSX.Element => {
 
             <div className="gap-1 flex items-center justify-center">
               <div className="w-fit mt-[-1.00px] font-heading-h5-semibold font-normal text-[#080808] text-xl leading-[var(--heading-h5-semibold-line-height)] whitespace-nowrap [font-style:var(--heading-h5-semibold-font-style)]">
-                Time Tracker
+                Haftalık Randevular
               </div>
 
               <div className="w-10 ml-1">
@@ -66,7 +66,7 @@ const Chart = (): JSX.Element => {
         </header>
 
         <div className="flex w-[416px] items-center gap-0.5 absolute top-[237px] left-[42px]">
-          {["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"].map((day) => (
+          {["Pzt", "Sal", "Çar", "Per", "Cum", "Cmt", "Paz"].map((day) => (
             <div
               key={day}
               className="flex items-center justify-center gap-1 px-1 py-2 relative flex-1 grow"
@@ -119,7 +119,7 @@ const Chart = (): JSX.Element => {
             </motion.div>
 
             <div className="inline-flex flex-col items-start gap-[27px] absolute top-0 left-[435px]">
-              {["8h", "4h", "2h", "0"].map((time) => (
+              {["25", "15", "10", "0"].map((time) => (
                 <div
                   key={time}
                   className="relative w-fit mt-[-1.00px] font-label-l2-medium font-medium text-[#888888] text-right tracking-normal leading-4 whitespace-nowrapleading-4"
@@ -141,7 +141,7 @@ const Chart = (): JSX.Element => {
           <div className="inline-flex items-start absolute top-[57px] left-[407px] rotate-180 h-[22px] overflow-hidden ml-1">
             <div className="inline-flex items-start gap-2.5 pl-1 pr-0.5 py-px relative flex-[0_0_auto] bg-[#030303] rounded-[4px_0px_0px_4px] overflow-hidden">
               <div className="relative w-fit mt-[-1.00px] h-[21px] rotate-180 [font-family:'SF_Pro_Text-Regular',Helvetica] font-normal text-white text-sm tracking-[0] leading-5 whitespace-nowrap">
-                Avg
+                Ort.
               </div>
             </div>
 

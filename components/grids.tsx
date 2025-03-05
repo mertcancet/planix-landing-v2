@@ -9,6 +9,14 @@ import Analytics from "./cards/Analytics";
 import Avatar from "./ui/avatar";
 import ChartCard from "./cards/chart";
 import { ContentCard } from "./cards/ContentCard";
+import {
+  Calendar,
+  Phone,
+  MessageSquare,
+  Mail,
+  Bell,
+  MessageCircle,
+} from "lucide-react";
 
 const Grids = () => {
   return (
@@ -46,29 +54,28 @@ const Grids = () => {
               className="w-[85%] h-[189px] bg-[#FFFFFF] mt-10 py-5 space-y-2 z-10 border border-[#DBDCDF] shadow-[0px_3px_8px_-1px_#3232470D,0px_0px_1px_0px_#0C1A4B3D] rounded-3xl"
             >
               <div className="flex justify-between px-5">
-                <div className="p-3 bg-[#E4ECF7] rounded-xl">
-                  <Image
-                    src={"/assets/driveLogo.png"}
-                    width={30}
-                    height={30}
-                    alt={"avatar"}
-                  />
+                <div className="p-3 bg-green-100 rounded-xl">
+                  <Calendar className="w-5 h-5 text-green-600" />
                 </div>
-                <HorizontalDots />
+                <span className="text-sm text-green-600 font-medium">
+                  Bugün
+                </span>
               </div>
-              <h1 className="font-semibold px-5">Manu Arora</h1>
+              <h1 className="font-semibold px-5 text-green-700">
+                Günlük Program
+              </h1>
               <div className="px-5">
-                <div className="flex justify-between text-[#84859E]">
-                  <span>69 GB</span>
-                  <span>80 GB</span>
+                <div className="flex justify-between text-green-600">
+                  <span>Tamamlanan</span>
+                  <span>8/12 Randevu</span>
                 </div>
                 <div className="mt-2">
-                  <div className="w-full h-2 bg-[#E4ECF7] rounded-full overflow-hidden">
+                  <div className="w-full h-2 bg-green-100 rounded-full overflow-hidden">
                     <motion.div
-                      className="h-2 bg-[#4C6FFF] rounded-full"
+                      className="h-2 bg-green-600 rounded-full"
                       variants={{
                         hidden: { width: "0%" },
-                        visible: { width: "70%" },
+                        visible: { width: "66%" },
                       }}
                       initial="hidden"
                       whileInView="visible"
@@ -79,9 +86,9 @@ const Grids = () => {
               </div>
             </motion.div>
             <ContentCard
-              title="Easy resume upload"
-              description="Simple way to track user's resume and relevant scores"
-              className="mt-24 "
+              title="Günün Özeti"
+              description="Bugün 4 randevunuz kaldı. Bir sonraki randevunuz saat 14:30'da."
+              className="mt-24"
             />
           </div>
           <div className="bg-[#FFFFFF] h-[483px] lg:w-3/5 w-full flex flex-col items-center rounded-[26px] p-5 border overflow-hidden">
@@ -118,30 +125,36 @@ const Grids = () => {
                   <Analytics color="#DFEBF3" />
                 </motion.div>
               </div>
+              <h2 className="text-lg font-semibold text-green-700 mb-4">
+                Yaklaşan Randevular
+              </h2>
               <div className="space-y-3 z-10">
                 {[
                   {
-                    avatar: 1,
-                    name: "Manu's Girlfriend",
-                    description: "Doesn't exist, fake profile.",
+                    name: "Ahmet Yılmaz",
+                    time: "14:30",
+                    service: "Saç Kesimi",
+                    status: "Onaylandı",
                     src: "/assets/avatar/avatar1.png",
                   },
                   {
-                    avatar: 2,
-                    name: "Gone Girl",
-                    description: "Not a good idea to hire.",
+                    name: "Ayşe Kaya",
+                    time: "15:15",
+                    service: "Saç Boyama",
+                    status: "Bekleniyor",
                     src: "/assets/avatar/avatar2.png",
                   },
                   {
-                    avatar: 3,
-                    name: "Dua Lipa",
-                    description: "Instant hire.",
+                    name: "Mehmet Demir",
+                    time: "16:00",
+                    service: "Sakal Tıraşı",
+                    status: "Onaylandı",
                     src: "/assets/avatar/avatar3.png",
                   },
                 ].map((item, index) => (
                   <motion.div
                     key={index}
-                    className="flex items-center justify-between p-4 lg:w-[400px] w-[270px] h-20 bg-white border rounded-xl shadow-[0px_3px_8px_-1px_#3232470D,0px_0px_1px_0px_#0C1A4B3D]"
+                    className="flex items-center justify-between p-4 lg:w-[400px] w-[270px] bg-white border rounded-xl shadow-[0px_3px_8px_-1px_#3232470D,0px_0px_1px_0px_#0C1A4B3D]"
                     variants={{
                       hidden: { opacity: 0, y: 50 },
                       visible: { opacity: 1, y: 0 },
@@ -151,24 +164,40 @@ const Grids = () => {
                     transition={{ duration: 0.8, delay: index * 0.2 }}
                   >
                     <div className="flex items-center">
-                      <Avatar src={item.src} badge="/assets/avatar_badge.png" />
+                      <Avatar src={item.src} />
                       <div className="grid ml-4">
-                        <h1 className="font-semibold">{item.name}</h1>
-                        <p className="font-normal text-sm">
-                          {item.description}
-                        </p>
+                        <div className="flex items-center gap-2">
+                          <h1 className="font-semibold">{item.name}</h1>
+                          <span className="text-sm text-green-600">
+                            {item.time}
+                          </span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <p className="font-normal text-sm text-gray-600">
+                            {item.service}
+                          </p>
+                          <span
+                            className={`text-xs px-2 py-0.5 rounded-full ${
+                              item.status === "Onaylandı"
+                                ? "bg-green-100 text-green-600"
+                                : "bg-yellow-100 text-yellow-600"
+                            }`}
+                          >
+                            {item.status}
+                          </span>
+                        </div>
                       </div>
                     </div>
-                    <div>
-                      <Dots />
-                    </div>
+                    <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
+                      <Phone className="w-4 h-4 text-green-600" />
+                    </button>
                   </motion.div>
                 ))}
               </div>
               <ContentCard
-                title="Track interview feedback"
-                description="All the features of product feedback tool you need to easily centralize product"
-                className="mt-8"
+                title="Randevu Yönetimi"
+                description="Tüm randevularınızı tek bir yerden kolayca yönetin ve takip edin."
+                className="mt-2"
               />
             </div>
           </div>
@@ -187,40 +216,93 @@ const Grids = () => {
               initial="hidden"
               whileInView="visible"
               transition={{ delay: 0.2, duration: 0.3 }}
-              className="absolute lg:mt-10 mt-20  mx-auto flex items-center justify-center inset-x-0"
+              className="absolute lg:mt-10 mt-20 mx-auto flex items-center justify-center inset-x-0"
             >
-              <Image
-                src={"/assets/social/discord.svg"}
-                alt="discord"
-                width="200"
-                height="200"
-                className="rotate-[-16deg]"
-              />
-              <Image
-                src={"/assets/social/insta.svg"}
-                alt="discord"
-                width="200"
-                height="200"
-                className="rotate-[7deg] ml-[-145px]"
-              />
-              <Image
-                src={"/assets/social/fb.svg"}
-                alt="discord"
-                width="200"
-                height="200"
-                className="rotate-[-10deg] ml-[-115px]"
-              />
-              <Image
-                src={"/assets/social/in.svg"}
-                alt="discord"
-                width="200"
-                height="200"
-                className="rotate-[12deg] ml-[-140px]"
-              />
+              <div className="relative w-[500px] h-[300px]">
+                <motion.div
+                  className="absolute left-0 top-10 "
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="flex flex-col items-center group rotate-[-16deg]">
+                    <div className="w-28 h-28 bg-green-100 rounded-2xl flex items-center justify-center  mb-3 shadow-lg transition-all duration-300 group-hover:shadow-green-200/50">
+                      <MessageSquare className="w-14 h-14 text-green-600 transition-transform duration-300 group-hover:-rotate-12" />
+                    </div>
+                    <div className="text-center  space-y-1">
+                      <p className="text-sm font-semibold text-green-600 tracking-wide">
+                        SMS
+                      </p>
+                      <p className="text-xs text-gray-600 bg-green-50/80 px-4 py-1.5 rounded-full backdrop-blur-sm shadow-sm">
+                        Otomatik Hatırlatma
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  className="absolute left-[140px] top-0"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="flex flex-col items-center group   rotate-[7deg]">
+                    <div className="w-28 h-28 bg-blue-100 rounded-2xl flex items-center justify-center mb-3 shadow-lg transition-all duration-300 group-hover:shadow-blue-200/50">
+                      <MessageCircle className="w-14 h-14 text-blue-600 transition-transform duration-300 group-hover:rotate-12" />
+                    </div>
+                    <div className="text-center  space-y-1">
+                      <p className="text-sm font-semibold text-blue-600 tracking-wide">
+                        WhatsApp
+                      </p>
+                      <p className="text-xs text-gray-600 bg-blue-50/80 px-4 py-1.5 rounded-full backdrop-blur-sm shadow-sm">
+                        Anlık Mesajlar
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  className="absolute left-[260px] top-12 "
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="flex flex-col items-center group rotate-[-10deg]">
+                    <div className="w-28 h-28 bg-purple-100 rounded-2xl flex items-center justify-center  mb-3 shadow-lg transition-all duration-300 group-hover:shadow-purple-200/50">
+                      <Mail className="w-14 h-14 text-purple-600 transition-transform duration-300 group-hover:-rotate-12" />
+                    </div>
+                    <div className="text-center  space-y-1">
+                      <p className="text-sm font-semibold text-purple-600 tracking-wide">
+                        E-posta
+                      </p>
+                      <p className="text-xs text-gray-600 bg-purple-50/80 px-4 py-1.5 rounded-full backdrop-blur-sm shadow-sm">
+                        Bilgilendirme
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+
+                <motion.div
+                  className="absolute right-0 top-4"
+                  whileHover={{ scale: 1.1 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                >
+                  <div className="flex flex-col items-center group rotate-[12deg]">
+                    <div className="w-28 h-28 bg-orange-100 rounded-2xl flex items-center justify-center  shadow-lg transition-all duration-300 group-hover:shadow-orange-200/50">
+                      <Bell className="w-14 h-14 text-orange-600 transition-transform duration-300 group-hover:rotate-12" />
+                    </div>
+                    <div className="text-center  space-y-1 mt-3">
+                      <p className="text-sm font-semibold text-orange-600 tracking-wide">
+                        Bildirim
+                      </p>
+                      <p className="text-xs text-gray-600 bg-orange-50/80 px-4 py-1.5 rounded-full backdrop-blur-sm shadow-sm">
+                        Anında Uyarı
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
             </motion.div>
             <ContentCard
-              title="Easy social media integration"
-              description="Go from nothing to social media success stories."
+              title="Otomatik Bildirim Sistemi"
+              description="SMS, WhatsApp, E-posta ve anlık bildirimlerle müşterilerinize otomatik randevu hatırlatmaları gönderin."
               className="mt-72"
             />
           </div>

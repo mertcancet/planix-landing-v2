@@ -148,7 +148,7 @@ export const Hero = () => {
           hatırlatmalar gönderin. İşletmenizi büyütmeye odaklanın, randevu
           takibini bize bırakın.
         </motion.p>
-        <Link href="/sign-up">
+        <Link href="https://app.planix.com.tr/auth/register">
           <motion.button
             transition={transition}
             variants={variants}
@@ -166,23 +166,21 @@ export const Hero = () => {
 
 const Banner = () => {
   return (
-    <Link href="/blog/Artificial-Intelligence">
-      <motion.div
-        className="md:w-[489px] w-72 md:h-10 px-2 h-9 rounded-xl bg-emerald-500/50 flex items-center justify-center md:gap-3 gap-1"
-        transition={transition}
-        variants={variants}
-      >
-        <Image
-          height={20}
-          width={20}
-          src="/assets/banner_Icon.svg"
-          alt="hero_text"
-          className="size-5 md:size-6"
-        />
-        <p className="md:text-base text-[10px] font-semibold">
-          Yeni! SMS ile randevularınızı kolayca yönetin ve hatırlatın
-        </p>
-      </motion.div>
-    </Link>
+    <motion.div
+      className="md:w-[505px] py-4 w-72 md:h-14 px-2 h-9 rounded-xl bg-emerald-500/50 flex items-center justify-center md:gap-3 gap-1"
+      transition={transition}
+      variants={variants}
+    >
+      <Image
+        height={20}
+        width={20}
+        src="/assets/banner_Icon.svg"
+        alt="hero_text"
+        className="size-5 md:size-6"
+      />
+      <p className="md:text-base text-[10px] font-semibold">
+        Yeni! SMS ile randevularınızı kolayca yönetin ve hatırlatın
+      </p>
+    </motion.div>
   );
 };

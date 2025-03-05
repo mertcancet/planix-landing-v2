@@ -4,20 +4,29 @@ import Avatar from "../ui/avatar";
 import { Dots } from "../icons";
 
 const PaperPinCard = ({ className }: { className?: string }) => {
-  const blocks = [
+  const notifications = [
     {
-      title: "Manu's Interview",
-      subtitle: "Candidate is mid.",
-      src: "/assets/avatar.png",
-      badge: "/assets/avatar_badge.png",
+      title: "Randevunuz Başarıyla Oluşturuldu",
+      details: {
+        personel: "Dr. Mehmet Yılmaz",
+        hizmet: "Diş Muayenesi",
+        tarih: "18.03.2024 10:30",
+        adres: "Çayyolu Mah. 2677. Cad. No:2",
+      },
+      status: "success",
     },
     {
-      title: "Ruru's Interview",
-      subtitle: "Candidate is good.",
-      src: "/assets/avatar.png",
-      badge: "/assets/avatar_badge.png",
+      title: "Randevu Hatırlatması",
+      details: {
+        personel: "Uzm. Dr. Ayşe Kaya",
+        hizmet: "Genel Kontrol",
+        tarih: "19.03.2024 14:15",
+        adres: "Çayyolu Mah. 2677. Cad. No:2",
+      },
+      status: "reminder",
     },
   ];
+
   return (
     <div className={className}>
       <div className="relative w-[400px] h-[439px]">
@@ -36,20 +45,47 @@ const PaperPinCard = ({ className }: { className?: string }) => {
           className="absolute left-5 -top-10 font-medium z-10 rotate-[8deg] h-20 w-20 aspect-square"
         />
         <div className="absolute left-12 mt-24 flex flex-col gap-4 w-[300px] h-[439px] z-[-1px]">
-          {blocks.map((item) => (
+          {notifications.map((item) => (
             <div
               key={item.title}
-              className="flex items-center justify-between p-4 w-[300px] h-20 bg-white rounded-xl shadow-[0px_3px_8px_-1px_#3232470D,0px_0px_1px_0px_#0C1A4B3D]"
+              className="p-4 w-[300px] bg-white rounded-xl shadow-[0px_3px_8px_-1px_#3232470D,0px_0px_1px_0px_#0C1A4B3D]"
             >
-              <div className="flex items-center">
-                <Avatar src={item.src} badge={item.badge} />
-                <div className="grid ml-4">
-                  <h1 className="font-semibold">{item.title}</h1>
-                  <p className="font-normal text-sm">{item.subtitle}</p>
+              <div className="space-y-2">
+                <p
+                  className={`text-sm font-medium ${
+                    item.status === "success"
+                      ? "text-green-600"
+                      : "text-blue-600"
+                  }`}
+                >
+                  {item.title}
+                </p>
+                <div className="space-y-1.5">
+                  <div className="flex justify-between">
+                    <span className="text-xs font-medium text-neutral-600">
+                      Personel
+                    </span>
+                    <span className="text-xs">{item.details.personel}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-xs font-medium text-neutral-600">
+                      Hizmet
+                    </span>
+                    <span className="text-xs">{item.details.hizmet}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-xs font-medium text-neutral-600">
+                      Tarih
+                    </span>
+                    <span className="text-xs">{item.details.tarih}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-xs font-medium text-neutral-600">
+                      Adres
+                    </span>
+                    <span className="text-xs">{item.details.adres}</span>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <Dots />
               </div>
             </div>
           ))}
