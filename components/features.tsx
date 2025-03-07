@@ -21,9 +21,8 @@ const Features = ({ className }: { className?: string }) => {
         Randevularınızı Kolayca Yönetin
       </h1>
       <p className="text-center w-72 md:w-[670px] md:text-base lg:text-lg text-sm px-1">
-        İşletmenizin randevularını kolayca yönetmenizi sağlayan, otomatik SMS
-        bildirimleri ile müşterilerinizi bilgilendiren ve randevu takibini sizin
-        için kolaylaştıran tüm özellikler tek bir platformda.
+        Otomatik SMS bildirimleri ile müşterilerinizi bilgilendiren ve randevu
+        takibini sizin için kolaylaştıran tüm özellikler tek bir platformda.
       </p>
     </motion.div>
   );

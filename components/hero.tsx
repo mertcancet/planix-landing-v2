@@ -144,9 +144,8 @@ export const Hero = () => {
           variants={variants}
           className="md:text-lg text-sm font-medium leading-[23px] text-center tracking-tight max-w-2xl mx-auto w-[95%] mt-9 text-neutral-600"
         >
-          Randevularınızı kolayca yönetin, SMS ile müşterilerinize otomatik
-          hatırlatmalar gönderin. İşletmenizi büyütmeye odaklanın, randevu
-          takibini bize bırakın.
+          SMS ile müşterilerinize otomatik hatırlatmalar gönderin. İşletmenizi
+          büyütmeye odaklanın, randevu takibini bize bırakın.
         </motion.p>
         <Link href="https://app.planix.com.tr/auth/register">
           <motion.button
