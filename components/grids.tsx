@@ -138,7 +138,7 @@ const Grids = () => {
                     src: "/assets/avatar/avatar1.png",
                   },
                   {
-                    name: "Ayşe Kaya",
+                    name: "Zeynep Kılıç",
                     time: "15:15",
                     service: "Saç Boyama",
                     status: "Bekleniyor",

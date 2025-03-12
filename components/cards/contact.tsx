@@ -16,8 +16,8 @@ const Contact = (): JSX.Element => {
           transition={{ duration: 0.5 }}
         >
           {[
-            "avatar1.png",
             "avatar2.png",
+            "avatar1.png",
             "avatar3.png",
             "avatar4.png",
             "avatar5.png",
@@ -26,20 +26,23 @@ const Contact = (): JSX.Element => {
             <motion.div
               variants={{
                 hidden: { opacity: 0, transform: "scale(1) rotate(0deg)" },
-                visible: { opacity: 1, transform: "scale(0.9) rotate(5deg)" },
+                visible: { opacity: 1, transform: "scale(0.9) rotate(15deg)" },
               }}
               key={item}
               initial="hidden"
               whileInView="visible"
-              transition={{ delay: 0.2, duration: 0.3 * i }}
+              transition={{ delay: 0.3, duration: 0.3 * i }}
+              className="relative"
             >
-              <Image
-                src={`/assets/avatar/${item}`}
-                alt="avatar"
-                width={70}
-                height={70}
-                className="md:w-[70px] md:h-[70px] w-[55px] h-[55px]"
-              />
+              <div className="relative w-[55px] h-[55px] md:w-[70px] md:h-[70px]">
+                <Image
+                  src={`/assets/avatar/${item}`}
+                  alt="avatar"
+                  fill
+                  className="rounded-full object-cover"
+                  sizes="(max-width: 768px) 55px, 70px"
+                />
+              </div>
             </motion.div>
           ))}
         </motion.div>
