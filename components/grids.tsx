@@ -164,7 +164,10 @@ const Grids = () => {
                     transition={{ duration: 0.8, delay: index * 0.2 }}
                   >
                     <div className="flex items-center">
-                      <Avatar src={item.src} />
+                      <Avatar
+                        src={item.src}
+                        className="w-[50px] h-[50px] rounded-full shrink-0"
+                      />
                       <div className="grid ml-4">
                         <div className="flex items-center gap-2">
                           <h1 className="font-semibold">{item.name}</h1>

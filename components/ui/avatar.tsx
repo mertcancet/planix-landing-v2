@@ -1,15 +1,19 @@
 import Image from "next/image";
 import React from "react";
-
-const Avatar: React.FC<{ src: string; badge?: string }> = ({ src, badge }) => {
+import { cn } from "@/lib/utils";
+const Avatar: React.FC<{ src: string; badge?: string; className?: string }> = ({
+  src,
+  badge,
+  className,
+}) => {
   return (
-    <div className="relative w-[50px] h-[50px]">
+    <div className={cn("relative w-[50px] h-[50px]", className)}>
       <Image
         src={src}
         alt="avatar"
         width={50}
         height={50}
-        className="rounded-full"
+        className="rounded-full w-full h-full object-cover"
       />
       {badge && (
         <Image

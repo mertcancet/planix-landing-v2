@@ -124,23 +124,31 @@ export function WorldMap({
           </linearGradient>
         </defs>
 
-        {avatars?.map((avatar, i) => (
-          <g key={`avatar-group-${i}`}>
-            <image
-              x={
-                projectPoint(avatar.lat, avatar.lng).x -
-                (avatar.size ? avatar.size / 2 : 12)
-              }
-              y={
-                projectPoint(avatar.lat, avatar.lng).y -
-                (avatar.size ? avatar.size / 2 : 12)
-              }
-              href={avatar.url}
-              width={avatar.size || "24"}
-              height={avatar.size || "24"}
-            />
-          </g>
-        ))}
+        {avatars?.map((avatar, i) => {
+          const size = avatar.size || 32; // Avatar boyutunu artırdım
+          return (
+            <g key={`avatar-group-${i}`}>
+              <defs>
+                <clipPath id={`avatar-clip-${i}`}>
+                  <circle
+                    cx={projectPoint(avatar.lat, avatar.lng).x}
+                    cy={projectPoint(avatar.lat, avatar.lng).y}
+                    r={size / 2}
+                  />
+                </clipPath>
+              </defs>
+              <image
+                x={projectPoint(avatar.lat, avatar.lng).x - size / 2}
+                y={projectPoint(avatar.lat, avatar.lng).y - size / 2}
+                href={avatar.url}
+                width={size}
+                height={size}
+                clipPath={`url(#avatar-clip-${i})`}
+                preserveAspectRatio="xMidYMid slice" // Görüntü oranını koruyarak sığdırma
+              />
+            </g>
+          );
+        })}
       </svg>
     </div>
   );
