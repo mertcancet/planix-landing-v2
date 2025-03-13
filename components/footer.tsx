@@ -9,21 +9,21 @@ import { Facebook, Github, Instagram, Linkedin, Twitter } from "./icons";
 import { Logo } from "./logo";
 
 const footerData = {
-  Pages: [
+  Sayfalar: [
     {
-      name: "All Products",
+      name: "Tüm Ürünler",
       path: "/",
     },
     {
-      name: "Studio",
+      name: "Stüdyo",
       path: "/",
     },
     {
-      name: "Clients",
+      name: "Müşteriler",
       path: "/",
     },
     {
-      name: "Pricing",
+      name: "Fiyatlandırma",
       path: "/",
     },
     {
@@ -31,17 +31,17 @@ const footerData = {
       path: "/",
     },
   ],
-  Legal: [
+  Yasal: [
     {
-      name: "Privacy Policy",
+      name: "Gizlilik Politikası",
       path: "/",
     },
     {
-      name: "Terms of Service",
+      name: "Kullanım Koşulları",
       path: "/",
     },
     {
-      name: "Cookie Policy",
+      name: "Çerez Politikası",
       path: "/",
     },
   ],
@@ -79,7 +79,7 @@ const Footer = () => {
         </div>
         <div className="flex items-center xl:justify-end justify-start w-full md:px-10 xl:px-0">
           <div className="grid grid-cols-2 md:grid-cols-3 justify-end md:w-1/2 w-[80%] md:gap-10 gap-20 xl:mt-32 mt-5 mr-10 px-2">
-            {["Pages", "Legal"].map((item) => (
+            {["Sayfalar", "Yasal"].map((item) => (
               <div key={item} className="flex flex-col gap-4">
                 <h1 className="font-extrabold">{item}</h1>
                 {footerData[item as keyof typeof footerData].map((item) => (

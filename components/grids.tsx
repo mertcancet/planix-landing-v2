@@ -91,7 +91,7 @@ const Grids = () => {
               className="mt-24"
             />
           </div>
-          <div className="bg-[#FFFFFF] h-[483px] lg:w-3/5 w-full flex flex-col items-center rounded-[26px] p-5 border overflow-hidden">
+          <div className="bg-[#FFFFFF] h-[570px] md:h-[600px] lg:h-[483px] lg:w-3/5 w-full flex flex-col items-center rounded-[26px] p-5 border overflow-hidden">
             <div className="relative w-full h-[293px] mt-5 flex flex-col items-center">
               <div className="absolute -left-[70px] scale-125 top-7 rotate-[12deg]">
                 <motion.div
@@ -131,21 +131,21 @@ const Grids = () => {
               <div className="space-y-3 z-10">
                 {[
                   {
-                    name: "Ahmet Yılmaz",
+                    name: "Zeynep Kılıç",
                     time: "14:30",
                     service: "Saç Kesimi",
                     status: "Onaylandı",
                     src: "/assets/avatar/avatar1.png",
                   },
                   {
-                    name: "Zeynep Kılıç",
+                    name: "Yeşim Sungur",
                     time: "15:15",
                     service: "Saç Boyama",
                     status: "Bekleniyor",
                     src: "/assets/avatar/avatar2.png",
                   },
                   {
-                    name: "Mehmet Demir",
+                    name: "Büşra Doğan",
                     time: "16:00",
                     service: "Sakal Tıraşı",
                     status: "Onaylandı",
