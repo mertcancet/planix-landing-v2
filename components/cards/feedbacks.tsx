@@ -45,9 +45,9 @@ const Feedbacks = (): JSX.Element => {
           <div className="space-y-6 w-full">
             <Card
               quote="PLANİX'in SMS entegrasyonu ve randevu takip sistemi işletmemizin verimliliğini artırdı. Özellikle müşteri bilgilerini detaylı şekilde kaydetme ve geçmiş randevuları görüntüleme özelliği çok faydalı. Personel planlaması da artık çok daha kolay."
-              name="Ali Yılmaz"
+              name="Efe Başaran"
               role="Berber Salonu Sahibi"
-              src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=3542&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src="/assets/avatar/avatar4.png"
               className="lg:h-1/3"
             />
             <Card
