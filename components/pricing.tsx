@@ -36,7 +36,7 @@ const Pricing = (): JSX.Element => {
           </Button>
           <div className="space-y-2">
             {[
-              "150 randevu hakkı",
+              "50 randevu hakkı",
               "Müşteri yönetimi",
               "Randevu takibi",
               "SMS bildirimleri",

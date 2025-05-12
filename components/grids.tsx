@@ -133,7 +133,7 @@ const Grids = () => {
                   {
                     name: "Zeynep Kılıç",
                     time: "14:30",
-                    service: "Saç Kesimi",
+                    service: "Kalıcı oje",
                     status: "Onaylandı",
                     src: "/assets/avatar/avatar1.png",
                   },
@@ -147,7 +147,7 @@ const Grids = () => {
                   {
                     name: "Büşra Doğan",
                     time: "16:00",
-                    service: "Sakal Tıraşı",
+                    service: "Saç Kesimi",
                     status: "Onaylandı",
                     src: "/assets/avatar/avatar3.png",
                   },

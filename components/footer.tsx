@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import SocialMediaCard from "./cards/SocialMediaCard";
 import PaperPinCard from "./cards/paperPin";
 import Link from "next/link";
-import { Facebook, Github, Instagram, Linkedin, Twitter } from "./icons";
+import { Instagram } from "./icons";
 import { Logo } from "./logo";
 
 const footerData = {
@@ -103,19 +103,7 @@ const Footer = () => {
             © Planix
           </p>
           <div className="flex md:gap-5 gap-3 [&>*]:md:scale-100 scale-75">
-            <Link href={"https://twitter.com"}>
-              <Twitter />
-            </Link>
-            <Link href={"https://linkedin.com"}>
-              <Linkedin />
-            </Link>
-            <Link href={"https://github.com"}>
-              <Github />
-            </Link>
-            <Link href={"https://facebook.com"}>
-              <Facebook />
-            </Link>
-            <Link href={"https://instagram.com"}>
+            <Link href={"https://www.instagram.com/planix.com.tr"}>
               <Instagram />
             </Link>
           </div>
