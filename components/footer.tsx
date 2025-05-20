@@ -7,6 +7,7 @@ import PaperPinCard from "./cards/paperPin";
 import Link from "next/link";
 import { Instagram } from "./icons";
 import { Logo } from "./logo";
+import Image from "next/image";
 
 const footerData = {
   Sayfalar: [
@@ -53,7 +54,7 @@ const Footer = () => {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="md:h-[683px] h-[200%] p-4 pb-0 relative rounded-[35px] border border-[#E6E6E6] mt-5 mb-11 overflow-hidden flex flex-col justify-between"
+      className=" md:h-[850px] h-[750px] p-4 pb-0 relative rounded-[35px] border border-[#E6E6E6] mt-5 mb-11 overflow-hidden flex flex-col justify-between"
     >
       <div
         className="absolute -z-20 top-0 left-0 w-full h-full"
@@ -96,7 +97,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full h-[100px] md:h-[unset]">
         <div className="border-[#CCCCCC] border-dashed border-t w-full h-1 mt:mt-10 mt-32 " />
         <div className="h-20 flex justify-center items-center md:gap-10 gap-2 mb-36 md:mb-0">
           <p className="text-[#737373] font-normal md:text-lg text-xs text-nowrap">
@@ -108,6 +109,14 @@ const Footer = () => {
             </Link>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center relative items-center h-12 w-full z-10 mb-5">
+        <Image
+          src={"/assets/footer/logo_band.png"}
+          alt="iyzico"
+          layout="fill"
+          objectFit="contain"
+        />
       </div>
     </motion.div>
   );
