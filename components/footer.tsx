@@ -10,40 +10,22 @@ import { Logo } from "./logo";
 import Image from "next/image";
 
 const footerData = {
-  Sayfalar: [
-    {
-      name: "Tüm Ürünler",
-      path: "/",
-    },
-    {
-      name: "Stüdyo",
-      path: "/",
-    },
-    {
-      name: "Müşteriler",
-      path: "/",
-    },
-    {
-      name: "Fiyatlandırma",
-      path: "/",
-    },
-    {
-      name: "Blog",
-      path: "/",
-    },
-  ],
   Yasal: [
     {
       name: "Gizlilik Politikası",
-      path: "/",
+      path: "/gizlilik-politikasi",
     },
     {
       name: "Kullanım Koşulları",
-      path: "/",
+      path: "/kullanim-kosullari",
     },
     {
       name: "Çerez Politikası",
-      path: "/",
+      path: "/cerez-politikasi",
+    },
+    {
+      name: "KVKK Metni",
+      path: "/kvkk-metni",
     },
   ],
 };
@@ -79,8 +61,8 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex items-center xl:justify-end justify-start w-full md:px-10 xl:px-0">
-          <div className="grid grid-cols-2 md:grid-cols-3 justify-end md:w-1/2 w-[80%] md:gap-10 gap-20 xl:mt-32 mt-5 mr-10 px-2">
-            {["Sayfalar", "Yasal"].map((item) => (
+          <div className="grid grid-cols-2 md:grid-cols-3 justify-end  md:gap-10 gap-20 xl:mt-32 mt-5 mr-10 px-2">
+            {["Yasal"].map((item) => (
               <div key={item} className="flex flex-col gap-4">
                 <h1 className="font-extrabold">{item}</h1>
                 {footerData[item as keyof typeof footerData].map((item) => (
@@ -94,6 +76,17 @@ const Footer = () => {
                 ))}
               </div>
             ))}
+            <div className="flex flex-col gap-4 ml-2">
+              <h1 className="font-extrabold">İletişim</h1>
+              <div className="flex flex-col gap-2">
+                <p className="font-normal text-[#535353] text-nowrap">
+                  test.planix@gmail.com
+                </p>
+                <p className="font-normal text-[#535353] text-nowrap">
+                  +90 537 874 81 84
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
