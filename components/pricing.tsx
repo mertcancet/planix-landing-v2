@@ -31,7 +31,13 @@ const Pricing = (): JSX.Element => {
             </span>
             <span className="text=[#737373]">/15 gün</span>
           </div>
-          <Button variant="primary" className="my-10">
+          <Button
+            variant="primary"
+            className="my-10"
+            onClick={() => {
+              window.location.href = "https://app.planix.com.tr/auth/register";
+            }}
+          >
             Hemen Başla
           </Button>
           <div className="space-y-2">
@@ -78,7 +84,13 @@ const Pricing = (): JSX.Element => {
             </span>
             <span className="text-white font-bold">₺/ay</span>
           </div>
-          <Button variant="secondary" className="my-10">
+          <Button
+            variant="secondary"
+            className="my-10"
+            onClick={() => {
+              window.location.href = "https://app.planix.com.tr/auth/register";
+            }}
+          >
             Hemen Başla
           </Button>
           <div className="space-y-3">
@@ -121,7 +133,13 @@ const Pricing = (): JSX.Element => {
             </span>
             <span className="text=[#737373]">₺/yıl</span>
           </div>
-          <Button variant="primary" className="my-10">
+          <Button
+            variant="primary"
+            className="my-10"
+            onClick={() => {
+              window.location.href = "https://app.planix.com.tr/auth/register";
+            }}
+          >
             2 Ay Hediye
           </Button>
           <div className="space-y-2">
@@ -157,10 +175,12 @@ const Button = ({
   children,
   variant,
   className,
+  onClick,
 }: {
   children: React.ReactNode;
   variant: "primary" | "secondary";
   className?: string;
+  onClick?: () => void;
 }) => {
   return (
     <button
@@ -172,6 +192,7 @@ const Button = ({
           : "bg-white",
         className
       )}
+      onClick={onClick}
     >
       {children}
     </button>
