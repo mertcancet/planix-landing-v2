@@ -57,7 +57,7 @@ const BlogCard = ({ blog }: { blog: Blog }) => {
           <h2 className="text-2xl font-semibold mt-4">{blog.label}</h2>
           <p className="text-sm text-muted-foreground">{blog.description}</p>
           <Link href={`${blog.slug}`} className="text-sm font-semibold">
-            Read More
+            Devamını Oku
           </Link>
         </div>
       </Link>

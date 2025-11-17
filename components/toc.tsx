@@ -30,7 +30,7 @@ export function DashboardTableOfContents({ toc }: TocProps) {
 
   return (
     <div className="space-y-2 xl:mb-0 mb-10">
-      <p className="font-medium text-xl xl:block hidden">In this article</p>
+      <p className="font-medium text-xl xl:block hidden">Bu Makale İçeriği</p>
       <Tree tree={toc} activeItem={activeHeading!} />
     </div>
   );

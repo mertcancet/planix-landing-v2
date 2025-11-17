@@ -66,7 +66,7 @@ const BlogContent = ({ doc, toc }: { doc: Blog; toc: TableOfContents }) => {
               {doc.description}
             </p>
             <span className="text-white text-sm mt-3">
-              {doc.date} • {doc.timeToRead} min read
+              {doc.date} • {doc.timeToRead} dk
             </span>
           </div>
         </AspectRatio>
