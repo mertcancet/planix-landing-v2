@@ -10,6 +10,12 @@ import { Hero } from "@/components/hero";
 import MapSection from "@/components/mapSection";
 import Pricing from "@/components/pricing";
 
+export const metadata = {
+  alternates: {
+    canonical: "https://planix.com.tr/",
+  },
+};
+
 export default function Home() {
   return (
     <div>
