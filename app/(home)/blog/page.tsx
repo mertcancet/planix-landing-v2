@@ -1,66 +1,13 @@
-"use client";
+import BlogComponent from "./_components/blog-component";
 
-import { allBlogs, Blog } from "@/.contentlayer/generated";
-import Header from "@/components/header";
-import { motion } from "motion/react";
-import Image from "next/image";
-import Link from "next/link";
+export const metadata = {
+  alternates: {
+    canonical: "https://planix.com.tr/blog",
+  },
+};
 
 const BlogPage = () => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="w-full flex flex-col items-center mt-10 mb-36"
-    >
-      <div className="md:w-[80%] w-full flex flex-col">
-        <Header
-          badge="Blog"
-          title="PLANİX ile İşletmenizi Büyütün"
-          subtitle="Randevu yönetimi, müşteri ilişkileri ve işletme verimliliği hakkında faydalı içerikler."
-          className="mt-3"
-        />
-        <div className="mt-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-            {allBlogs.map((blog) => (
-              <BlogCard key={blog._id} blog={blog} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </motion.div>
-  );
+  return <BlogComponent />;
 };
 
 export default BlogPage;
-
-const BlogCard = ({ blog }: { blog: Blog }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="md:p-4 p-0 rounded-xl"
-    >
-      <Link href={`${blog.slug}`} className="flex flex-col items-center">
-        <div className="w-full rounded-xl overflow-hidden hover:shadow-xl">
-          <Image
-            src={blog.banner}
-            alt="logo"
-            width={300}
-            height={300}
-            className="w-full h-80 object-cover"
-          />
-        </div>
-        <div className="flex flex-col gap-2 mt-2">
-          <h2 className="text-2xl font-semibold mt-4">{blog.label}</h2>
-          <p className="text-sm text-muted-foreground">{blog.description}</p>
-          <Link href={`${blog.slug}`} className="text-sm font-semibold">
-            Devamını Oku
-          </Link>
-        </div>
-      </Link>
-    </motion.div>
-  );
-};

@@ -97,17 +97,17 @@
       "raw": "\n# PLANİX Fiyatlandırma Seçenekleri\n\n## 🎁 Deneme Paketi\n\n- 15 gün ücretsiz kullanım\n- 50 randevu hakkı\n- Temel özellikler\n- SMS bildirimleri\n- E-posta desteği\n\n## 💼 Profesyonel Paket\n\n- Aylık 1099₺\n- Sınırsız randevu\n- Tüm özellikler\n- Öncelikli destek\n- Ücretsiz kurulum\n\n## 🌟 Yıllık Avantajlı Paket\n\n- 10990₺/yıl\n- 2 ay hediye\n- Tüm özellikler\n- VIP destek\n- Fiyat artışından etkilenmez\n",
       "code": "var Component=(()=>{var m=Object.create;var r=Object.defineProperty;var k=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var p=Object.getPrototypeOf,y=Object.prototype.hasOwnProperty;var f=(i,e)=>()=>(e||i((e={exports:{}}).exports,e),e.exports),b=(i,e)=>{for(var l in e)r(i,l,{get:e[l],enumerable:!0})},s=(i,e,l,t)=>{if(e&&typeof e==\"object\"||typeof e==\"function\")for(let a of u(e))!y.call(i,a)&&a!==l&&r(i,a,{get:()=>e[a],enumerable:!(t=k(e,a))||t.enumerable});return i};var x=(i,e,l)=>(l=i!=null?m(p(i)):{},s(e||!i||!i.__esModule?r(l,\"default\",{value:i,enumerable:!0}):l,i)),N=i=>s(r({},\"__esModule\",{value:!0}),i);var d=f((P,c)=>{c.exports=_jsx_runtime});var j={};b(j,{default:()=>o,frontmatter:()=>g});var n=x(d()),g={label:\"PLAN\\u0130X - Fiyatland\\u0131rma\",banner:\"/assets/blog/randevu-yonetim-sistemi.jpeg\",description:\"PLAN\\u0130X randevu y\\xF6netim sistemi fiyatland\\u0131rma se\\xE7enekleri\",date:\"Kas\\u0131m 17\",timeToRead:3};function h(i){let e={a:\"a\",h1:\"h1\",h2:\"h2\",li:\"li\",span:\"span\",ul:\"ul\",...i.components};return(0,n.jsxs)(n.Fragment,{children:[(0,n.jsxs)(e.h1,{id:\"plani\\u0307x-fiyatland\\u0131rma-se\\xE7enekleri\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#plani\\u0307x-fiyatland\\u0131rma-se\\xE7enekleri\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"PLAN\\u0130X Fiyatland\\u0131rma Se\\xE7enekleri\"]}),`\n`,(0,n.jsxs)(e.h2,{id:\"-deneme-paketi\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#-deneme-paketi\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"\\u{1F381} Deneme Paketi\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"15 g\\xFCn \\xFCcretsiz kullan\\u0131m\"}),`\n`,(0,n.jsx)(e.li,{children:\"50 randevu hakk\\u0131\"}),`\n`,(0,n.jsx)(e.li,{children:\"Temel \\xF6zellikler\"}),`\n`,(0,n.jsx)(e.li,{children:\"SMS bildirimleri\"}),`\n`,(0,n.jsx)(e.li,{children:\"E-posta deste\\u011Fi\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"-profesyonel-paket\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#-profesyonel-paket\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"\\u{1F4BC} Profesyonel Paket\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"Ayl\\u0131k 1099\\u20BA\"}),`\n`,(0,n.jsx)(e.li,{children:\"S\\u0131n\\u0131rs\\u0131z randevu\"}),`\n`,(0,n.jsx)(e.li,{children:\"T\\xFCm \\xF6zellikler\"}),`\n`,(0,n.jsx)(e.li,{children:\"\\xD6ncelikli destek\"}),`\n`,(0,n.jsx)(e.li,{children:\"\\xDCcretsiz kurulum\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{id:\"-y\\u0131ll\\u0131k-avantajl\\u0131-paket\",children:[(0,n.jsx)(e.a,{className:\"subheading-anchor\",\"aria-label\":\"Link to section\",href:\"#-y\\u0131ll\\u0131k-avantajl\\u0131-paket\",children:(0,n.jsx)(e.span,{className:\"icon icon-link\"})}),\"\\u{1F31F} Y\\u0131ll\\u0131k Avantajl\\u0131 Paket\"]}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"10990\\u20BA/y\\u0131l\"}),`\n`,(0,n.jsx)(e.li,{children:\"2 ay hediye\"}),`\n`,(0,n.jsx)(e.li,{children:\"T\\xFCm \\xF6zellikler\"}),`\n`,(0,n.jsx)(e.li,{children:\"VIP destek\"}),`\n`,(0,n.jsx)(e.li,{children:\"Fiyat art\\u0131\\u015F\\u0131ndan etkilenmez\"}),`\n`]})]})}function o(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,{...i,children:(0,n.jsx)(h,{...i})}):h(i)}return N(j);})();\n;return Component;"
     },
-    "_id": "blog/fiyatlandirma.mdx",
+    "_id": "blog/fiyatlandirma-hakkinda-bilgi.mdx",
     "_raw": {
-      "sourceFilePath": "blog/fiyatlandirma.mdx",
-      "sourceFileName": "fiyatlandirma.mdx",
+      "sourceFilePath": "blog/fiyatlandirma-hakkinda-bilgi.mdx",
+      "sourceFileName": "fiyatlandirma-hakkinda-bilgi.mdx",
       "sourceFileDir": "blog",
       "contentType": "mdx",
-      "flattenedPath": "blog/fiyatlandirma"
+      "flattenedPath": "blog/fiyatlandirma-hakkinda-bilgi"
     },
     "type": "Blog",
-    "slug": "/blog/fiyatlandirma",
-    "slugAsParams": "fiyatlandirma"
+    "slug": "/blog/fiyatlandirma-hakkinda-bilgi",
+    "slugAsParams": "fiyatlandirma-hakkinda-bilgi"
   },
   {
     "label": "PLANİX - Güzellik ve Sağlık Merkezi Yönetim Sistemi",
