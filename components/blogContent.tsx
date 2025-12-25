@@ -27,7 +27,7 @@ const BlogContent = ({ doc, toc }: { doc: Blog; toc: TableOfContents }) => {
       <div className="mx-auto w-full min-w-0 max-w-3xl">
         <div className="mb-4 flex items-center space-x-1 text-sm leading-none text-muted-foreground">
           <Link href={"/"} className="truncate hover:underline">
-            Home
+            Anasayfa
           </Link>
           <ChevronRight className="h-3.5 w-3.5" />
           <Link href={"/blog"} className="truncate hover:underline">
@@ -43,7 +43,7 @@ const BlogContent = ({ doc, toc }: { doc: Blog; toc: TableOfContents }) => {
             className="w-full border-b-2 border-t-2 mb-4"
           >
             <AccordionItem value="item-1">
-              <AccordionTrigger disabledIcon>In this article</AccordionTrigger>
+              <AccordionTrigger disabledIcon>Bu makalede</AccordionTrigger>
               <AccordionContent>
                 <DashboardTableOfContents toc={toc} />
               </AccordionContent>

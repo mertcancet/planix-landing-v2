@@ -9,7 +9,8 @@ import blog__guzellikSalonuMdx from './blog__guzellik-salonu.mdx.json' assert { 
 import blog__kuaforYonetimSistemiMdx from './blog__kuafor-yonetim-sistemi.mdx.json' assert { type: 'json' }
 import blog__planixTanitimiMdx from './blog__planix-tanitimi.mdx.json' assert { type: 'json' }
 import blog__psikologMdx from './blog__psikolog.mdx.json' assert { type: 'json' }
+import blog__randevuProgramiMdx from './blog__randevu-programi.mdx.json' assert { type: 'json' }
 import blog__randevuYonetimSistemiNedirMdx from './blog__randevu-yonetim-sistemi-nedir.mdx.json' assert { type: 'json' }
 import blog__randevuYonetimSistemiMdx from './blog__randevu-yonetim-sistemi.mdx.json' assert { type: 'json' }
 
-export const allBlogs = [blog__dijitalDonusumMdx, blog__disKlinikMdx, blog__doktorMdx, blog__dovmeciMdx, blog__fiyatlandirmaHakkindaBilgiMdx, blog__guzellikSalonuMdx, blog__kuaforYonetimSistemiMdx, blog__planixTanitimiMdx, blog__psikologMdx, blog__randevuYonetimSistemiNedirMdx, blog__randevuYonetimSistemiMdx]
+export const allBlogs = [blog__dijitalDonusumMdx, blog__disKlinikMdx, blog__doktorMdx, blog__dovmeciMdx, blog__fiyatlandirmaHakkindaBilgiMdx, blog__guzellikSalonuMdx, blog__kuaforYonetimSistemiMdx, blog__planixTanitimiMdx, blog__psikologMdx, blog__randevuProgramiMdx, blog__randevuYonetimSistemiNedirMdx, blog__randevuYonetimSistemiMdx]
