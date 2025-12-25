@@ -1,5 +1,19 @@
 import React from "react";
 
+export const metadata = {
+  title: "Kullanım Koşulları | Planix",
+  description:
+    "Planix kullanım koşulları hakkında bilgi edinin. Hizmetlerimizi kullanırken dikkat etmeniz gerekenler.",
+  keywords: [
+    "Planix kullanım koşulları",
+    "hizmet şartları",
+    "kullanıcı rehberi",
+  ],
+  alternates: {
+    canonical: "https://planix.com.tr/kullanim-kosullari",
+  },
+};
+
 export default function KullanimKosullari() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">

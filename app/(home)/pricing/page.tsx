@@ -6,6 +6,21 @@ import Header from "@/components/header";
 import Pricing from "@/components/pricing";
 import React from "react";
 
+export const metadata = {
+  title: "Planix Fiyatlandırma | Uygun ve Şeffaf",
+  description:
+    "Planix'in uygun fiyatlandırma seçeneklerini keşfedin. Tüm özelliklere sınırsız erişim ve ücretsiz kurulum.",
+  keywords: [
+    "Planix fiyatlandırma",
+    "uygun fiyat",
+    "şeffaf fiyatlandırma",
+    "randevu yönetimi",
+  ],
+  alternates: {
+    canonical: "https://planix.com.tr/pricing",
+  },
+};
+
 const PricingPage = () => {
   return (
     <div className="w-full flex flex-col items-center">

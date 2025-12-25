@@ -1,5 +1,15 @@
 import React from "react";
 
+export const metadata = {
+  title: "KVKK Metni | Planix",
+  description:
+    "Planix KVKK metni hakkında bilgi edinin. Kişisel verilerinizin korunması bizim için önemlidir.",
+  keywords: ["Planix KVKK metni", "kişisel veri koruma", "veri güvenliği"],
+  alternates: {
+    canonical: "https://planix.com.tr/kvkk-metni",
+  },
+};
+
 const KVKKMetni = () => {
   return (
     <div className="max-w-4xl mx-auto px-4 py-8 text-gray-800">

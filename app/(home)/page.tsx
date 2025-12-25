@@ -9,8 +9,13 @@ import Header from "@/components/header";
 import { Hero } from "@/components/hero";
 import MapSection from "@/components/mapSection";
 import Pricing from "@/components/pricing";
+import HomeBlogLinks from "@/components/home-blog-links";
 
 export const metadata = {
+  title: "Planix Ana Sayfa | Randevu Yönetim Sistemi",
+  description:
+    "Planix ile işletmenizi kolaylaştıracak özellikleri keşfedin. Randevularınızı yönetin, müşterilerinize otomatik SMS gönderin.",
+  keywords: ["Planix", "randevu yönetimi", "müşteri yönetimi", "otomatik SMS"],
   alternates: {
     canonical: "https://planix.com.tr/",
   },
@@ -53,6 +58,7 @@ export default function Home() {
       <Feedbacks />
       <FAQSection />
       <Contact />
+      <HomeBlogLinks />
     </div>
   );
 }

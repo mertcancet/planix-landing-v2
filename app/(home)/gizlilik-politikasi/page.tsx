@@ -1,6 +1,14 @@
 import React from "react";
 
 export const metadata = {
+  title: "Gizlilik Politikası | Planix",
+  description:
+    "Planix gizlilik politikası hakkında bilgi edinin. Verilerinizin güvenliği bizim için önemlidir.",
+  keywords: [
+    "Planix gizlilik politikası",
+    "veri güvenliği",
+    "müşteri gizliliği",
+  ],
   alternates: {
     canonical: "https://planix.com.tr/gizlilik-politikasi",
   },

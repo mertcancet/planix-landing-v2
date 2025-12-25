@@ -9,6 +9,17 @@ export const metadata: Metadata = {
   title: "Planix | Online Randevu ve Müşteri Yönetim Sistemi",
   description:
     "Planix ile randevularınızı kolayca yönetin, müşterilerinize otomatik SMS hatırlatmaları gönderin. İşletmeniz için profesyonel randevu yönetim sistemi.",
+  keywords: [
+    "randevu yönetim sistemi",
+    "müşteri yönetimi",
+    "otomatik SMS",
+    "Planix",
+    "randevu planla",
+    "işletme yönetimi",
+  ],
+  alternates: {
+    canonical: "https://planix.com.tr/",
+  },
   icons: {
     icon: "/favicon.ico",
   },

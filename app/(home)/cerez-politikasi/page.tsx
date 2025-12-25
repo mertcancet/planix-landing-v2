@@ -1,6 +1,14 @@
 import React from "react";
 
 export const metadata = {
+  title: "Çerez Politikası | Planix",
+  description:
+    "Planix çerez politikası hakkında bilgi edinin. Verilerinizin nasıl kullanıldığını öğrenin.",
+  keywords: [
+    "Planix çerez politikası",
+    "veri kullanımı",
+    "gizlilik politikası",
+  ],
   alternates: {
     canonical: "https://planix.com.tr/cerez-politikasi",
   },
